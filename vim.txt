@@ -1,0 +1,92 @@
+Welcome to this VIM practice file!
+This isn't a tutorial for beginners, but a set of useful commands that I would
+like to remember, but don't user every day. YMMV.
+
+Here are some activities you might not do every day, and get rusty on.
+
+Step one: Make a copy of this file to play around with.
+Step two: Fold all the hints away (by indentation), so that you can expose
+them individually if you want to.
+  HINT:
+  This is a hint. It is indented.
+  To set the fold method for this window, use
+  :set fdm=indent
+  or
+  :set foldmethod=indent
+
+Follow the steps in this file to practice. If you need a hint on how to do
+something, unfold the accompanying hint.
+Do that now for this hint:
+  HINT:
+  Yay!
+OK, so if you've reached this step, and you can't see the hint above, then you
+need help remembering how to unfold hints.
+Just this once, I'll come straight out and tell you:
+Cursor over the hint and use za
+Do that again for the hint below.
+  HINT:
+  za toggles folding for the fold at the cursor
+  zo opens the fold at the cursor.
+  You can use either.
+
+OK, so you can how follow the rest of the steps with or without spoilers!
+
+# Folding
+Well, we've started to use folding commands, so we might as well finish that section
+
+# Wrap text
+This text is all on one line. Set vim to display long lines wrapped as multiple screen lines so that it is easier to read this text. The command only changes the way the line is displayed, it doesn't add line breaks into the file.
+  HINT:
+  :set wrap linebreak nolist
+Great! Now set it so that long lines are displayed as one long line, running off the edge of the screen, if they are longer than the window can fit.
+  HINT:
+  No idea!
+
+# Auto-formatting
+You can also ask vim to insert line breaks automatically.
+Type a long line in now, to check that feature is not already enabled.
+>
+
+Now enable the feature to insert line breaks after 79 characters.
+  HINT:
+  :set textwidth=79
+And now type another long line, and check the results.
+>
+
+Notice that setting the line width has not changed any of the existing lines'
+formatting. So, select you previous long line, and automatically wrap the text.
+  HINT:
+  gq
+
+
+# Spell checking
+Spell check the upcoming paragraph (and only that paragraph).
+Firstly, ensure that spell checking is turned on for this file.
+  HINT:
+  :setlocal spell
+When correcting the mistakes, use vim's 'suggest words' feature.
+  HINT:
+  z= will suggest alternatives for any word under the cursor.
+You might want to add words to your dictionary if you think it is spelled correctly, but vim doen't recognise it.
+  HINT:
+  zg will add the word to the dictionary
+However, if you want to repeat this refresher many times, you'll want to remove it again, for practice.
+  HINT:
+  zw will comment out the word from the dictionary.
+  zug will remove the word from the dictionary.
+You'll also want to skip straight to the next mistake, using a shortcut.
+  HINT:
+  ]s (and [s)
+
+This pargraph is poory spellt. You can correct all the errrs pretti quikly
+with vim's spell-checker. Remember to use vim's 'suggest words' fearture too.
+Some words might be perfectly cromulent, however, so
+skip those if vim thingks they are wrong. You should also practice skipping to
+the next incorrectly spelled word, because there might be long gaps where all
+the words are spelled correctly, and it's more efficient to skip straight to
+the spelling mistak.
+
+The rest of the text in this refresher is spelt perfectly fine, so turn the spell checker off now.
+  HINT:
+  :set nospell
+
